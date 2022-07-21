@@ -11,10 +11,19 @@
 <body>
     <p id="Titulo"></p>
     <p  id="parrafo"></p>
+    <p id="parrafo2" style="display:none" >Hello JavaScript!</p>
     <script>
         document.getElementById("Titulo").innerHTML="Hello Java"
         var nuevo=prompt("Escriba su titulo: ")
         document.getElementById("parrafo").innerHTML=nuevo;
+        var alerteahora= function () {
+            alert("Llegó a la hora")
+        };
+        setTimeout(alerteahora,3000)
     </script>
+<button 
+type="button"
+ onclick="document.getElementById('parrafo2').style.display='block'">Click Me!</button>
+ <!--? onclick="document.getElementById('demo').style.display='inline'">Click Me!</button> -->
 </body>
 </html>
